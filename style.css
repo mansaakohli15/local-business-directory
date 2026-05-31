@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #FEF9F0;
-    color: #2C3E3F;
+    background: #FFFDF5;
+    color: #4A3B32;
     line-height: 1.5;
 }
 
@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid #F0E5D6;
+    border-bottom: 2px solid #F5EFE6;
     margin-bottom: 2rem;
 }
 
@@ -40,27 +40,27 @@ header {
 }
 
 .logo-text {
-    color: #2C3E3F;
+    color: #4A3B32;
 }
 
 .logo-text span {
-    color: #F4A261;
+    color: #E6B17E;
 }
 
 .admin-toggle {
-    background: #6B9080;
-    color: white;
+    background: #E6B17E;
+    color: #4A3B32;
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 40px;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .admin-toggle:hover {
-    background: #5a7e6e;
+    background: #D49C6D;
     transform: scale(1.02);
 }
 
@@ -74,15 +74,15 @@ header {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
-    color: #2C3E3F;
+    color: #4A3B32;
 }
 
 .hero h1 span {
-    color: #F4A261;
+    color: #E6B17E;
 }
 
 .hero p {
-    color: #6B7A6F;
+    color: #8B8176;
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
@@ -98,7 +98,7 @@ header {
 .search-box input {
     flex: 1;
     padding: 1rem 1.2rem;
-    border: 2px solid #F0E5D6;
+    border: 2px solid #F5EFE6;
     border-radius: 60px;
     font-size: 1rem;
     background: white;
@@ -107,23 +107,23 @@ header {
 
 .search-box input:focus {
     outline: none;
-    border-color: #F4A261;
+    border-color: #E6B17E;
 }
 
 .search-box button {
-    background: #F4A261;
+    background: #E6B17E;
     border: none;
     padding: 0 1.8rem;
     border-radius: 60px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    color: white;
+    color: #4A3B32;
     transition: all 0.2s;
 }
 
 .search-box button:hover {
-    background: #e8924a;
+    background: #D49C6D;
 }
 
 /* Categories */
@@ -137,26 +137,26 @@ header {
 
 .category-btn {
     background: white;
-    border: 2px solid #F0E5D6;
+    border: 2px solid #F5EFE6;
     padding: 0.6rem 1.4rem;
     border-radius: 40px;
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
-    color: #2C3E3F;
+    color: #4A3B32;
     font-family: 'Inter', sans-serif;
 }
 
 .category-btn:hover {
-    border-color: #F4A261;
-    background: #FFF5EA;
+    border-color: #E6B17E;
+    background: #FFFBF5;
 }
 
 .category-btn.active {
-    background: #F4A261;
-    border-color: #F4A261;
-    color: white;
+    background: #E6B17E;
+    border-color: #E6B17E;
+    color: #4A3B32;
 }
 
 /* Main Layout */
@@ -179,21 +179,21 @@ header {
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     transition: all 0.25s ease;
-    border: 1px solid #F0E5D6;
+    border: 1px solid #F5EFE6;
     cursor: pointer;
 }
 
 .business-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-    border-color: #F4A261;
+    border-color: #E6B17E;
 }
 
 .business-category {
     display: inline-block;
     padding: 0.2rem 0.8rem;
-    background: #FFF5EA;
-    color: #F4A261;
+    background: #FFFBF5;
+    color: #D49C6D;
     border-radius: 20px;
     font-size: 0.7rem;
     font-weight: 600;
@@ -204,11 +204,11 @@ header {
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.4rem;
-    color: #2C3E3F;
+    color: #4A3B32;
 }
 
 .business-address {
-    color: #8B9A8F;
+    color: #A89F94;
     font-size: 0.85rem;
     margin-bottom: 0.8rem;
     display: flex;
@@ -218,7 +218,7 @@ header {
 
 .business-hours {
     font-size: 0.8rem;
-    color: #6B9080;
+    color: #C77A6F;
     font-weight: 500;
     margin-bottom: 0.8rem;
 }
@@ -239,13 +239,13 @@ header {
 }
 
 .contact-btn {
-    background: #6B9080;
-    color: white;
+    background: #E6B17E;
+    color: #4A3B32;
 }
 
 .delete-business {
-    background: #f0e5d6;
-    color: #c97e5a;
+    background: #F5EFE6;
+    color: #C77A6F;
 }
 
 /* Admin Panel */
@@ -253,39 +253,55 @@ header {
     background: white;
     border-radius: 28px;
     padding: 1.8rem;
-    border: 1px solid #F0E5D6;
+    border: 1px solid #F5EFE6;
     margin-top: 1rem;
 }
 
 .admin-panel h2 {
-    color: #2C3E3F;
+    color: #4A3B32;
     margin-bottom: 0.3rem;
 }
 
+.admin-panel h2::before {
+    content: "✨ ";
+}
+
 .admin-sub {
-    color: #8B9A8F;
+    color: #A89F94;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
 }
 
 .admin-form {
-    background: #FEF9F0;
+    background: #FFFDF5;
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 2rem;
+    border: 1px solid #F5EFE6;
+}
+
+.admin-form h3 {
+    margin-bottom: 1rem;
+    color: #4A3B32;
 }
 
 .admin-form input, .admin-form textarea {
     width: 100%;
     margin-bottom: 0.8rem;
     padding: 0.8rem 1rem;
-    border: 1.5px solid #F0E5D6;
+    border: 1.5px solid #F5EFE6;
     border-radius: 16px;
     font-family: 'Inter', sans-serif;
+    background: white;
+}
+
+.admin-form input:focus, .admin-form textarea:focus {
+    outline: none;
+    border-color: #E6B17E;
 }
 
 .add-btn {
-    background: #6B9080;
+    background: #C77A6F;
     color: white;
     border: none;
     padding: 0.8rem;
@@ -294,6 +310,11 @@ header {
     font-weight: 600;
     cursor: pointer;
     font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.add-btn:hover {
+    background: #B0685C;
 }
 
 /* Admin Business List */
@@ -302,20 +323,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem;
-    border-bottom: 1px solid #F0E5D6;
+    border-bottom: 1px solid #F5EFE6;
 }
 
 .admin-business-name {
     font-weight: 500;
+    color: #4A3B32;
 }
 
 .admin-delete {
-    background: #f0e5d6;
+    background: #F5EFE6;
     border: none;
     padding: 0.3rem 1rem;
     border-radius: 20px;
     cursor: pointer;
-    color: #c97e5a;
+    color: #C77A6F;
 }
 
 /* Modal */
@@ -325,7 +347,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(74, 59, 50, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,7 +369,11 @@ header {
     right: 1.5rem;
     font-size: 1.8rem;
     cursor: pointer;
-    color: #8B9A8F;
+    color: #A89F94;
+}
+
+.close:hover {
+    color: #C77A6F;
 }
 
 .hidden {
@@ -358,7 +384,10 @@ header {
 .empty-state {
     text-align: center;
     padding: 3rem;
-    color: #8B9A8F;
+    color: #A89F94;
+    background: white;
+    border-radius: 24px;
+    border: 1px solid #F5EFE6;
 }
 
 /* Responsive */
@@ -373,5 +402,9 @@ header {
     
     .business-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .logo-text {
+        font-size: 1.4rem;
     }
 }
