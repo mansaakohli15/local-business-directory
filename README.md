@@ -153,6 +153,7 @@ Simply open `index.html` in your preferred browser.
 
 ## 📸 Screenshots
 
+<img width="1919" height="1088" alt="image" src="https://github.com/user-attachments/assets/115743bd-0bf5-493e-a6fb-36f790f1ddcb" />
 
 ---
 
