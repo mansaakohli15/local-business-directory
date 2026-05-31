@@ -262,10 +262,6 @@ header {
     margin-bottom: 0.3rem;
 }
 
-.admin-panel h2::before {
-    content: "✨ ";
-}
-
 .admin-sub {
     color: #A89F94;
     margin-bottom: 1.5rem;
@@ -380,7 +376,6 @@ header {
     display: none;
 }
 
-/* Empty state */
 .empty-state {
     text-align: center;
     padding: 3rem;

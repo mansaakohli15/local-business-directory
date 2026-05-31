@@ -1,3 +1,9 @@
+// ============================================
+// LOCALHUB - Local Business Directory Platform
+// Warm "Golden Hour" Color Palette
+// ============================================
+
+// Sample business data with more healthcare options
 let businesses = [
     {
         id: 1,
@@ -122,7 +128,6 @@ let nextId = 14;
 let currentCategory = "all";
 let searchTerm = "";
 
-// Load from localStorage
 function loadData() {
     const saved = localStorage.getItem("localhub_businesses");
     if (saved) {
@@ -130,7 +135,6 @@ function loadData() {
         const savedId = localStorage.getItem("localhub_nextId");
         if (savedId) nextId = parseInt(savedId);
     } else {
-        // First time - save initial data
         saveData();
     }
 }
@@ -140,7 +144,6 @@ function saveData() {
     localStorage.setItem("localhub_nextId", nextId);
 }
 
-// Filter businesses
 function getFilteredBusinesses() {
     return businesses.filter(biz => {
         const matchesCategory = currentCategory === "all" || biz.category === currentCategory;
@@ -152,7 +155,6 @@ function getFilteredBusinesses() {
     });
 }
 
-// Get category icon emoji
 function getCategoryIcon(cat) {
     const icons = {
         restaurant: "🍕",
@@ -163,7 +165,6 @@ function getCategoryIcon(cat) {
     return icons[cat] || "📍";
 }
 
-// Get category display name
 function getCategoryDisplay(cat) {
     const names = {
         restaurant: "Restaurant",
@@ -174,7 +175,6 @@ function getCategoryDisplay(cat) {
     return names[cat] || cat;
 }
 
-// Render business grid
 function renderBusinessGrid() {
     const grid = document.getElementById("businessGrid");
     const filtered = getFilteredBusinesses();
@@ -197,7 +197,6 @@ function renderBusinessGrid() {
         </div>
     `).join("");
     
-    // Add click handlers for cards (view details)
     document.querySelectorAll(".business-card").forEach(card => {
         card.addEventListener("click", (e) => {
             if (e.target.classList.contains("contact-btn") || e.target.classList.contains("delete-business")) {
@@ -208,7 +207,6 @@ function renderBusinessGrid() {
         });
     });
     
-    // Contact button handlers
     document.querySelectorAll(".contact-btn").forEach(btn => {
         btn.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -218,7 +216,6 @@ function renderBusinessGrid() {
         });
     });
     
-    // Delete button handlers
     document.querySelectorAll(".delete-business").forEach(btn => {
         btn.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -235,7 +232,6 @@ function renderBusinessGrid() {
     });
 }
 
-// Show business detail modal
 function showBusinessDetail(id) {
     const biz = businesses.find(b => b.id === id);
     if (!biz) return;
@@ -268,7 +264,6 @@ function showBusinessDetail(id) {
     });
 }
 
-// Render admin list
 function renderAdminList() {
     const container = document.getElementById("adminBusinessList");
     if (businesses.length === 0) {
@@ -301,7 +296,6 @@ function renderAdminList() {
     });
 }
 
-// Simple toast notification
 function showToast(message, type = "add") {
     const toast = document.createElement("div");
     toast.style.position = "fixed";
@@ -324,7 +318,6 @@ function showToast(message, type = "add") {
     }, 2500);
 }
 
-// Add new business
 function addBusiness() {
     const name = document.getElementById("businessName").value.trim();
     const category = document.getElementById("businessCategory").value.trim().toLowerCase();
@@ -357,7 +350,6 @@ function addBusiness() {
     businesses.push(newBiz);
     saveData();
     
-    // Clear form
     document.getElementById("businessName").value = "";
     document.getElementById("businessCategory").value = "";
     document.getElementById("businessAddress").value = "";
@@ -370,7 +362,6 @@ function addBusiness() {
     showToast(`✨ "${name}" added successfully!`, "add");
 }
 
-// Escape HTML to prevent XSS
 function escapeHtml(str) {
     if (!str) return "";
     return str.replace(/[&<>]/g, function(m) {
@@ -381,9 +372,7 @@ function escapeHtml(str) {
     });
 }
 
-// Setup event listeners
 function setupEventListeners() {
-    // Search
     document.getElementById("searchBtn").addEventListener("click", () => {
         searchTerm = document.getElementById("searchInput").value;
         renderBusinessGrid();
@@ -396,7 +385,6 @@ function setupEventListeners() {
         }
     });
     
-    // Clear search button functionality (optional)
     const searchInput = document.getElementById("searchInput");
     searchInput.addEventListener("input", () => {
         if (searchInput.value === "") {
@@ -405,7 +393,6 @@ function setupEventListeners() {
         }
     });
     
-    // Categories
     document.querySelectorAll(".category-btn").forEach(btn => {
         btn.addEventListener("click", () => {
             document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
@@ -415,7 +402,6 @@ function setupEventListeners() {
         });
     });
     
-    // Admin panel toggle
     const adminPanel = document.getElementById("adminPanel");
     const adminToggle = document.getElementById("adminToggleBtn");
     adminToggle.addEventListener("click", () => {
@@ -428,10 +414,8 @@ function setupEventListeners() {
         }
     });
     
-    // Add business
     document.getElementById("addBusinessBtn").addEventListener("click", addBusiness);
     
-    // Modal close
     document.querySelector(".close").addEventListener("click", () => {
         document.getElementById("detailModal").classList.add("hidden");
     });
@@ -444,7 +428,6 @@ function setupEventListeners() {
     });
 }
 
-// Initialize everything
 loadData();
 setupEventListeners();
 renderBusinessGrid();
