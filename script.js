@@ -1,9 +1,7 @@
 // ============================================
-// LOCALHUB - Local Business Directory Platform
-// Warm "Golden Hour" Color Palette
+// LOCALHUB - Complete with Maps + Reviews
 // ============================================
 
-// Sample business data with more healthcare options
 let businesses = [
     {
         id: 1,
@@ -12,7 +10,14 @@ let businesses = [
         address: "123 Main Street, Downtown",
         phone: "(555) 123-4567",
         hours: "7AM - 9PM",
-        description: "Cozy cafe serving fresh coffee and homemade pastries. Family-friendly atmosphere with outdoor seating."
+        description: "Cozy cafe serving fresh coffee and homemade pastries.",
+        lat: 40.7128,
+        lng: -74.0060,
+        rating: 4.5,
+        reviews: [
+            { user: "Sarah", rating: 5, comment: "Best coffee in town!", date: "2024-03-15" },
+            { user: "Mike", rating: 4, comment: "Great atmosphere", date: "2024-03-10" }
+        ]
     },
     {
         id: 2,
@@ -21,7 +26,13 @@ let businesses = [
         address: "456 Fashion Ave",
         phone: "(555) 234-5678",
         hours: "10AM - 8PM",
-        description: "Modern clothing boutique with sustainable fashion options. Eco-friendly packaging."
+        description: "Modern clothing boutique with sustainable fashion.",
+        lat: 40.7145,
+        lng: -74.0080,
+        rating: 4.2,
+        reviews: [
+            { user: "Emma", rating: 5, comment: "Love their collection!", date: "2024-03-12" }
+        ]
     },
     {
         id: 3,
@@ -30,7 +41,13 @@ let businesses = [
         address: "789 Health Blvd",
         phone: "(555) 345-6789",
         hours: "8AM - 6PM",
-        description: "Family medicine and urgent care. Walk-ins welcome. Most insurance accepted."
+        description: "Family medicine and urgent care. Walk-ins welcome.",
+        lat: 40.7160,
+        lng: -74.0100,
+        rating: 4.8,
+        reviews: [
+            { user: "Dr. Smith", rating: 5, comment: "Excellent care", date: "2024-03-14" }
+        ]
     },
     {
         id: 4,
@@ -39,7 +56,13 @@ let businesses = [
         address: "321 Learning Lane",
         phone: "(555) 456-7890",
         hours: "9AM - 5PM",
-        description: "Tutoring and test prep for all ages. Expert instructors with proven results."
+        description: "Tutoring and test prep for all ages.",
+        lat: 40.7180,
+        lng: -74.0120,
+        rating: 4.6,
+        reviews: [
+            { user: "Parent", rating: 5, comment: "Grades improved!", date: "2024-03-11" }
+        ]
     },
     {
         id: 5,
@@ -48,7 +71,13 @@ let businesses = [
         address: "100 Medical Center Dr",
         phone: "(555) 789-0123",
         hours: "24/7 Emergency",
-        description: "Full-service hospital with emergency care, surgery, and specialized clinics. Level 1 trauma center."
+        description: "Full-service hospital with emergency care.",
+        lat: 40.7200,
+        lng: -74.0140,
+        rating: 4.7,
+        reviews: [
+            { user: "Robert", rating: 5, comment: "Saved my life", date: "2024-03-13" }
+        ]
     },
     {
         id: 6,
@@ -57,7 +86,13 @@ let businesses = [
         address: "222 Healthy Smiles Ave",
         phone: "(555) 890-1234",
         hours: "9AM - 7PM",
-        description: "Family dentistry, cleanings, braces, and whitening services. Emergency appointments available."
+        description: "Family dentistry and whitening services.",
+        lat: 40.7220,
+        lng: -74.0160,
+        rating: 4.9,
+        reviews: [
+            { user: "David", rating: 5, comment: "Painless cleaning!", date: "2024-03-14" }
+        ]
     },
     {
         id: 7,
@@ -66,7 +101,13 @@ let businesses = [
         address: "55 Wellness Blvd",
         phone: "(555) 901-2345",
         hours: "8AM - 10PM",
-        description: "Prescriptions, health supplies, and free delivery. Immunizations available."
+        description: "Prescriptions and free delivery.",
+        lat: 40.7240,
+        lng: -74.0180,
+        rating: 4.4,
+        reviews: [
+            { user: "Thomas", rating: 4.5, comment: "Fast service", date: "2024-03-12" }
+        ]
     },
     {
         id: 8,
@@ -75,7 +116,13 @@ let businesses = [
         address: "77 Italian Way",
         phone: "(555) 012-3456",
         hours: "11AM - 11PM",
-        description: "Authentic Italian pasta, pizza, and wine. Family recipes since 1985."
+        description: "Authentic Italian pasta and pizza.",
+        lat: 40.7260,
+        lng: -74.0200,
+        rating: 4.7,
+        reviews: [
+            { user: "Marco", rating: 5, comment: "Best lasagna!", date: "2024-03-13" }
+        ]
     },
     {
         id: 9,
@@ -84,7 +131,13 @@ let businesses = [
         address: "888 Electronics Row",
         phone: "(555) 123-7890",
         hours: "10AM - 9PM",
-        description: "Laptops, phones, accessories, and repairs. Price match guarantee."
+        description: "Laptops, phones, and repairs.",
+        lat: 40.7280,
+        lng: -74.0220,
+        rating: 4.3,
+        reviews: [
+            { user: "Alex", rating: 5, comment: "Fixed my laptop", date: "2024-03-11" }
+        ]
     },
     {
         id: 10,
@@ -93,7 +146,13 @@ let businesses = [
         address: "33 Peaceful Lane",
         phone: "(555) 234-8901",
         hours: "7AM - 8PM",
-        description: "Yoga, meditation, and wellness classes for all levels. First class free!"
+        description: "Yoga and meditation classes.",
+        lat: 40.7300,
+        lng: -74.0240,
+        rating: 4.8,
+        reviews: [
+            { user: "Rachel", rating: 5, comment: "Life-changing", date: "2024-03-14" }
+        ]
     },
     {
         id: 11,
@@ -102,7 +161,13 @@ let businesses = [
         address: "888 Spice Street",
         phone: "(555) 345-9012",
         hours: "11AM - 10PM",
-        description: "Authentic Chinese cuisine. Dumplings, noodles, and family-style meals."
+        description: "Authentic Chinese cuisine.",
+        lat: 40.7320,
+        lng: -74.0260,
+        rating: 4.5,
+        reviews: [
+            { user: "Wei", rating: 5, comment: "Best dumplings", date: "2024-03-12" }
+        ]
     },
     {
         id: 12,
@@ -111,7 +176,13 @@ let businesses = [
         address: "444 Care Avenue",
         phone: "(555) 456-0123",
         hours: "24/7",
-        description: "Multi-specialty hospital with advanced diagnostic services. Emergency care always open."
+        description: "Multi-specialty hospital.",
+        lat: 40.7340,
+        lng: -74.0280,
+        rating: 4.6,
+        reviews: [
+            { user: "Patricia", rating: 5, comment: "Compassionate staff", date: "2024-03-13" }
+        ]
     },
     {
         id: 13,
@@ -120,7 +191,13 @@ let businesses = [
         address: "777 Future Way",
         phone: "(555) 567-1234",
         hours: "8AM - 4PM",
-        description: "Early childhood education. Play-based learning for ages 2-5."
+        description: "Early childhood education.",
+        lat: 40.7360,
+        lng: -74.0300,
+        rating: 4.9,
+        reviews: [
+            { user: "Jessica", rating: 5, comment: "My daughter loves it", date: "2024-03-14" }
+        ]
     }
 ];
 
@@ -149,8 +226,7 @@ function getFilteredBusinesses() {
         const matchesCategory = currentCategory === "all" || biz.category === currentCategory;
         const matchesSearch = searchTerm === "" || 
             biz.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            biz.address.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            biz.category.toLowerCase().includes(searchTerm.toLowerCase());
+            biz.address.toLowerCase().includes(searchTerm.toLowerCase());
         return matchesCategory && matchesSearch;
     });
 }
@@ -175,6 +251,17 @@ function getCategoryDisplay(cat) {
     return names[cat] || cat;
 }
 
+function renderStars(rating) {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 >= 0.5;
+    let stars = '';
+    for (let i = 0; i < fullStars; i++) stars += '⭐';
+    if (halfStar) stars += '½';
+    const emptyStars = 5 - Math.ceil(rating);
+    for (let i = 0; i < emptyStars; i++) stars += '☆';
+    return stars;
+}
+
 function renderBusinessGrid() {
     const grid = document.getElementById("businessGrid");
     const filtered = getFilteredBusinesses();
@@ -188,6 +275,7 @@ function renderBusinessGrid() {
         <div class="business-card" data-id="${biz.id}">
             <div class="business-category">${getCategoryIcon(biz.category)} ${getCategoryDisplay(biz.category)}</div>
             <div class="business-name">${escapeHtml(biz.name)}</div>
+            <div class="business-rating">${renderStars(biz.rating)} (${biz.reviews.length} reviews)</div>
             <div class="business-address">📍 ${escapeHtml(biz.address)}</div>
             <div class="business-hours">🕒 ${escapeHtml(biz.hours)}</div>
             <div class="business-actions">
@@ -212,7 +300,7 @@ function renderBusinessGrid() {
             e.stopPropagation();
             const phone = btn.dataset.phone;
             const name = btn.dataset.name;
-            alert(`📞 Contacting ${name}\nPhone: ${phone}\n\n(In a real app, this would initiate a call or show a contact form)`);
+            alert(`📞 Contacting ${name}\nPhone: ${phone}`);
         });
     });
     
@@ -239,44 +327,115 @@ function showBusinessDetail(id) {
     const modal = document.getElementById("detailModal");
     const modalBody = document.getElementById("modalBody");
     
+    const reviewsHtml = biz.reviews.map(review => `
+        <div style="border-bottom: 1px solid #F0E5D6; padding: 0.8rem 0;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
+                <strong>${escapeHtml(review.user)}</strong>
+                <span>${renderStars(review.rating)}</span>
+            </div>
+            <p style="color: #6B7A6F; font-size: 0.85rem;">${escapeHtml(review.comment)}</p>
+            <small style="color: #8B9A8F;">${review.date}</small>
+        </div>
+    `).join("");
+    
     modalBody.innerHTML = `
         <div style="text-align: center; margin-bottom: 1rem;">
             <span style="font-size: 3rem;">${getCategoryIcon(biz.category)}</span>
         </div>
-        <h2 style="color: #C77A6F; margin-bottom: 0.5rem; font-size: 1.8rem;">${escapeHtml(biz.name)}</h2>
-        <p style="color: #E6B17E; margin-bottom: 1.5rem; font-weight: 500;">${getCategoryDisplay(biz.category)}</p>
+        <h2 style="color: #F4A261; margin-bottom: 0.5rem; font-size: 1.8rem;">${escapeHtml(biz.name)}</h2>
+        <p style="color: #6B9080; margin-bottom: 1rem;">${getCategoryDisplay(biz.category)}</p>
         
-        <div style="background: #FFFDF5; padding: 1rem; border-radius: 16px; margin-bottom: 1rem;">
-            <p style="margin-bottom: 0.5rem;"><strong>📍 Address:</strong> ${escapeHtml(biz.address)}</p>
-            <p style="margin-bottom: 0.5rem;"><strong>📞 Phone:</strong> ${escapeHtml(biz.phone)}</p>
-            <p style="margin-bottom: 0.5rem;"><strong>🕒 Hours:</strong> ${escapeHtml(biz.hours)}</p>
+        <div style="text-align: center; margin-bottom: 1rem;">
+            <div style="font-size: 1.2rem;">${renderStars(biz.rating)}</div>
+            <small>${biz.reviews.length} customer reviews</small>
         </div>
         
-        <p style="margin-bottom: 1.5rem; line-height: 1.6;"><strong>📝 About:</strong> ${escapeHtml(biz.description)}</p>
+        <div style="background: #FEF9F0; padding: 1rem; border-radius: 16px; margin-bottom: 1rem;">
+            <p><strong>📍 Address:</strong> ${escapeHtml(biz.address)}</p>
+            <p><strong>📞 Phone:</strong> ${escapeHtml(biz.phone)}</p>
+            <p><strong>🕒 Hours:</strong> ${escapeHtml(biz.hours)}</p>
+        </div>
         
-        <button id="modalContactBtn" style="width: 100%; background: #E6B17E; color: #4A3B32; border: none; padding: 0.8rem; border-radius: 40px; cursor: pointer; font-weight: 600; font-size: 1rem;">📞 Contact Business</button>
+        <p style="margin-bottom: 1rem;"><strong>📝 About:</strong> ${escapeHtml(biz.description)}</p>
+        
+        <div style="margin-bottom: 1rem;">
+            <strong>🗺️ Location Map</strong>
+            <div id="businessMap" style="height: 200px; width: 100%; margin-top: 0.5rem; border-radius: 16px; overflow: hidden;"></div>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+            <strong>⭐ Customer Reviews</strong>
+            <div id="reviewsList" style="max-height: 200px; overflow-y: auto; margin-top: 0.5rem;">
+                ${reviewsHtml || '<p style="color: #8B9A8F;">No reviews yet. Be the first!</p>'}
+            </div>
+        </div>
+        
+        <div style="background: #FEF9F0; padding: 1rem; border-radius: 16px; margin-bottom: 1rem;">
+            <strong>✍️ Leave a Review</strong>
+            <input type="text" id="reviewUserName" placeholder="Your name" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px; border: 1px solid #F0E5D6;">
+            <select id="reviewRating" style="width: 100%; padding: 0.5rem; margin-bottom: 0.5rem; border-radius: 8px; border: 1px solid #F0E5D6;">
+                <option value="5">⭐⭐⭐⭐⭐ 5 stars</option>
+                <option value="4">⭐⭐⭐⭐ 4 stars</option>
+                <option value="3">⭐⭐⭐ 3 stars</option>
+                <option value="2">⭐⭐ 2 stars</option>
+                <option value="1">⭐ 1 star</option>
+            </select>
+            <textarea id="reviewComment" rows="2" placeholder="Your review..." style="width: 100%; padding: 0.5rem; border-radius: 8px; border: 1px solid #F0E5D6;"></textarea>
+            <button id="submitReviewBtn" style="background: #F4A261; color: white; border: none; padding: 0.6rem; width: 100%; border-radius: 40px; margin-top: 0.5rem; cursor: pointer;">Submit Review</button>
+        </div>
+        
+        <button id="modalContactBtn" style="width: 100%; background: #6B9080; color: white; border: none; padding: 0.8rem; border-radius: 40px; cursor: pointer;">📞 Contact Business</button>
     `;
     
     modal.classList.remove("hidden");
     
+    setTimeout(() => {
+        if (typeof L !== 'undefined') {
+            const map = L.map('businessMap').setView([biz.lat, biz.lng], 15);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            L.marker([biz.lat, biz.lng]).addTo(map).bindPopup(biz.name).openPopup();
+        }
+    }, 100);
+    
     document.getElementById("modalContactBtn")?.addEventListener("click", () => {
-        alert(`📞 Contact ${biz.name} at ${biz.phone}\n\n(In a real app, this would connect you directly)`);
+        alert(`📞 Contact ${biz.name} at ${biz.phone}`);
+    });
+    
+    document.getElementById("submitReviewBtn")?.addEventListener("click", () => {
+        const userName = document.getElementById("reviewUserName").value.trim();
+        const rating = parseInt(document.getElementById("reviewRating").value);
+        const comment = document.getElementById("reviewComment").value.trim();
+        
+        if (!userName || !comment) {
+            alert("⚠️ Please enter your name and comment");
+            return;
+        }
+        
+        const today = new Date().toISOString().split('T')[0];
+        biz.reviews.push({ user: userName, rating: rating, comment: comment, date: today });
+        
+        let total = 0;
+        biz.reviews.forEach(r => total += r.rating);
+        biz.rating = total / biz.reviews.length;
+        
+        saveData();
+        showToast("✨ Thanks for your review!");
+        showBusinessDetail(id);
     });
 }
 
 function renderAdminList() {
     const container = document.getElementById("adminBusinessList");
     if (businesses.length === 0) {
-        container.innerHTML = "<p style='color: #B0A89A;'>No businesses yet. Add your first!</p>";
+        container.innerHTML = "<p style='color: #8B9A8F;'>No businesses yet. Add your first!</p>";
         return;
     }
     
     container.innerHTML = businesses.map(biz => `
         <div class="admin-business-item">
-            <div class="admin-business-name">
-                ${escapeHtml(biz.name)} 
-                <span style="color: #E6B17E; font-size: 0.75rem; font-weight: 500;">(${getCategoryDisplay(biz.category)})</span>
-            </div>
+            <div class="admin-business-name">${escapeHtml(biz.name)} <span style="color: #F4A261;">(${getCategoryDisplay(biz.category)})</span></div>
             <button class="admin-delete" data-id="${biz.id}">Remove</button>
         </div>
     `).join("");
@@ -285,37 +444,31 @@ function renderAdminList() {
         btn.addEventListener("click", () => {
             const id = parseInt(btn.dataset.id);
             const biz = businesses.find(b => b.id === id);
-            if (confirm(`Delete "${biz?.name}" from directory?`)) {
+            if (confirm(`Delete "${biz?.name}"?`)) {
                 businesses = businesses.filter(b => b.id !== id);
                 saveData();
                 renderBusinessGrid();
                 renderAdminList();
-                showToast(`🗑️ "${biz?.name}" deleted`, "remove");
+                showToast(`🗑️ "${biz?.name}" deleted`);
             }
         });
     });
 }
 
-function showToast(message, type = "add") {
+function showToast(message) {
     const toast = document.createElement("div");
     toast.style.position = "fixed";
     toast.style.bottom = "20px";
     toast.style.right = "20px";
-    toast.style.background = type === "add" ? "#E6B17E" : "#C77A6F";
-    toast.style.color = "#4A3B32";
+    toast.style.background = "#6B9080";
+    toast.style.color = "white";
     toast.style.padding = "12px 24px";
     toast.style.borderRadius = "40px";
     toast.style.fontWeight = "500";
-    toast.style.fontSize = "0.9rem";
-    toast.style.boxShadow = "0 4px 12px rgba(0,0,0,0.1)";
     toast.style.zIndex = "2000";
     toast.innerText = message;
     document.body.appendChild(toast);
-    
-    setTimeout(() => {
-        toast.style.opacity = "0";
-        setTimeout(() => toast.remove(), 300);
-    }, 2500);
+    setTimeout(() => toast.remove(), 2500);
 }
 
 function addBusiness() {
@@ -327,13 +480,13 @@ function addBusiness() {
     const description = document.getElementById("businessDesc").value.trim();
     
     if (!name || !category || !address || !phone) {
-        alert("⚠️ Please fill at least: Name, Category, Address, Phone");
+        alert("⚠️ Please fill Name, Category, Address, Phone");
         return;
     }
     
     const validCategories = ["restaurant", "shop", "healthcare", "education"];
     if (!validCategories.includes(category)) {
-        alert(`⚠️ Category must be one of: ${validCategories.join(", ")}`);
+        alert(`⚠️ Category must be: ${validCategories.join(", ")}`);
         return;
     }
     
@@ -344,7 +497,11 @@ function addBusiness() {
         address: address,
         phone: phone,
         hours: hours || "Contact for hours",
-        description: description || "Local business serving the community with quality service."
+        description: description || "Local business serving the community.",
+        lat: 40.7400 + (Math.random() * 0.02 - 0.01),
+        lng: -74.0400 + (Math.random() * 0.02 - 0.01),
+        rating: 0,
+        reviews: []
     };
     
     businesses.push(newBiz);
@@ -359,7 +516,7 @@ function addBusiness() {
     
     renderBusinessGrid();
     renderAdminList();
-    showToast(`✨ "${name}" added successfully!`, "add");
+    showToast(`✨ "${name}" added!`);
 }
 
 function escapeHtml(str) {
@@ -381,14 +538,6 @@ function setupEventListeners() {
     document.getElementById("searchInput").addEventListener("keypress", (e) => {
         if (e.key === "Enter") {
             searchTerm = document.getElementById("searchInput").value;
-            renderBusinessGrid();
-        }
-    });
-    
-    const searchInput = document.getElementById("searchInput");
-    searchInput.addEventListener("input", () => {
-        if (searchInput.value === "") {
-            searchTerm = "";
             renderBusinessGrid();
         }
     });
@@ -421,9 +570,8 @@ function setupEventListeners() {
     });
     
     window.addEventListener("click", (e) => {
-        const modal = document.getElementById("detailModal");
-        if (e.target === modal) {
-            modal.classList.add("hidden");
+        if (e.target === document.getElementById("detailModal")) {
+            document.getElementById("detailModal").classList.add("hidden");
         }
     });
 }
