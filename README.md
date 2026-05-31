@@ -153,14 +153,6 @@ Simply open `index.html` in your preferred browser.
 
 ## 📸 Screenshots
 
-| Screen                | Description                                   |
-| --------------------- | --------------------------------------------- |
-| 🏠 Home Page          | Hero section with search and category filters |
-| 📇 Business Directory | Responsive business listing cards             |
-| 🔍 Details Modal      | Complete business information popup           |
-| 🛠️ Admin Panel       | Add and manage listings                       |
-
-
 
 ---
 
