@@ -1,5 +1,5 @@
 // ============================================
-// LOCALHUB - Complete with Maps + Reviews
+// LOCALHUB - Complete with 13 Businesses + Maps + Reviews
 // ============================================
 
 let businesses = [
@@ -10,13 +10,13 @@ let businesses = [
         address: "123 Main Street, Downtown",
         phone: "(555) 123-4567",
         hours: "7AM - 9PM",
-        description: "Cozy cafe serving fresh coffee and homemade pastries.",
+        description: "Cozy cafe serving fresh coffee and homemade pastries. Family-friendly atmosphere with outdoor seating.",
         lat: 40.7128,
         lng: -74.0060,
         rating: 4.5,
         reviews: [
             { user: "Sarah", rating: 5, comment: "Best coffee in town!", date: "2024-03-15" },
-            { user: "Mike", rating: 4, comment: "Great atmosphere", date: "2024-03-10" }
+            { user: "Mike", rating: 4, comment: "Great atmosphere, friendly staff", date: "2024-03-10" }
         ]
     },
     {
@@ -26,12 +26,13 @@ let businesses = [
         address: "456 Fashion Ave",
         phone: "(555) 234-5678",
         hours: "10AM - 8PM",
-        description: "Modern clothing boutique with sustainable fashion.",
+        description: "Modern clothing boutique with sustainable fashion options. Eco-friendly packaging.",
         lat: 40.7145,
         lng: -74.0080,
         rating: 4.2,
         reviews: [
-            { user: "Emma", rating: 5, comment: "Love their collection!", date: "2024-03-12" }
+            { user: "Emma", rating: 5, comment: "Love their sustainable collection!", date: "2024-03-12" },
+            { user: "James", rating: 3.5, comment: "Good quality but pricey", date: "2024-03-08" }
         ]
     },
     {
@@ -41,12 +42,13 @@ let businesses = [
         address: "789 Health Blvd",
         phone: "(555) 345-6789",
         hours: "8AM - 6PM",
-        description: "Family medicine and urgent care. Walk-ins welcome.",
+        description: "Family medicine and urgent care. Walk-ins welcome. Most insurance accepted.",
         lat: 40.7160,
         lng: -74.0100,
         rating: 4.8,
         reviews: [
-            { user: "Dr. Smith", rating: 5, comment: "Excellent care", date: "2024-03-14" }
+            { user: "Dr. Smith", rating: 5, comment: "Excellent care, very professional", date: "2024-03-14" },
+            { user: "Lisa", rating: 4.5, comment: "Short wait times, great doctors", date: "2024-03-09" }
         ]
     },
     {
@@ -56,12 +58,13 @@ let businesses = [
         address: "321 Learning Lane",
         phone: "(555) 456-7890",
         hours: "9AM - 5PM",
-        description: "Tutoring and test prep for all ages.",
+        description: "Tutoring and test prep for all ages. Expert instructors with proven results.",
         lat: 40.7180,
         lng: -74.0120,
         rating: 4.6,
         reviews: [
-            { user: "Parent", rating: 5, comment: "Grades improved!", date: "2024-03-11" }
+            { user: "Parent", rating: 5, comment: "My child's grades improved significantly", date: "2024-03-11" },
+            { user: "John", rating: 4, comment: "Knowledgeable tutors", date: "2024-03-07" }
         ]
     },
     {
@@ -71,12 +74,13 @@ let businesses = [
         address: "100 Medical Center Dr",
         phone: "(555) 789-0123",
         hours: "24/7 Emergency",
-        description: "Full-service hospital with emergency care.",
+        description: "Full-service hospital with emergency care, surgery, and specialized clinics. Level 1 trauma center.",
         lat: 40.7200,
         lng: -74.0140,
         rating: 4.7,
         reviews: [
-            { user: "Robert", rating: 5, comment: "Saved my life", date: "2024-03-13" }
+            { user: "Robert", rating: 5, comment: "Saved my life, forever grateful", date: "2024-03-13" },
+            { user: "Maria", rating: 4.5, comment: "Great emergency response", date: "2024-03-06" }
         ]
     },
     {
@@ -86,12 +90,13 @@ let businesses = [
         address: "222 Healthy Smiles Ave",
         phone: "(555) 890-1234",
         hours: "9AM - 7PM",
-        description: "Family dentistry and whitening services.",
+        description: "Family dentistry, cleanings, braces, and whitening services. Emergency appointments available.",
         lat: 40.7220,
         lng: -74.0160,
         rating: 4.9,
         reviews: [
-            { user: "David", rating: 5, comment: "Painless cleaning!", date: "2024-03-14" }
+            { user: "David", rating: 5, comment: "Painless cleaning, amazing staff", date: "2024-03-14" },
+            { user: "Jennifer", rating: 5, comment: "Best dentist I've ever been to", date: "2024-03-10" }
         ]
     },
     {
@@ -101,12 +106,13 @@ let businesses = [
         address: "55 Wellness Blvd",
         phone: "(555) 901-2345",
         hours: "8AM - 10PM",
-        description: "Prescriptions and free delivery.",
+        description: "Prescriptions, health supplies, and free delivery. Immunizations available.",
         lat: 40.7240,
         lng: -74.0180,
         rating: 4.4,
         reviews: [
-            { user: "Thomas", rating: 4.5, comment: "Fast service", date: "2024-03-12" }
+            { user: "Thomas", rating: 4.5, comment: "Fast service, friendly pharmacists", date: "2024-03-12" },
+            { user: "Amanda", rating: 4, comment: "Good prices on medications", date: "2024-03-08" }
         ]
     },
     {
@@ -116,12 +122,13 @@ let businesses = [
         address: "77 Italian Way",
         phone: "(555) 012-3456",
         hours: "11AM - 11PM",
-        description: "Authentic Italian pasta and pizza.",
+        description: "Authentic Italian pasta, pizza, and wine. Family recipes since 1985.",
         lat: 40.7260,
         lng: -74.0200,
         rating: 4.7,
         reviews: [
-            { user: "Marco", rating: 5, comment: "Best lasagna!", date: "2024-03-13" }
+            { user: "Marco", rating: 5, comment: "Best lasagna ever!", date: "2024-03-13" },
+            { user: "Sophia", rating: 4.5, comment: "Great wine selection", date: "2024-03-09" }
         ]
     },
     {
@@ -131,12 +138,13 @@ let businesses = [
         address: "888 Electronics Row",
         phone: "(555) 123-7890",
         hours: "10AM - 9PM",
-        description: "Laptops, phones, and repairs.",
+        description: "Laptops, phones, accessories, and repairs. Price match guarantee.",
         lat: 40.7280,
         lng: -74.0220,
         rating: 4.3,
         reviews: [
-            { user: "Alex", rating: 5, comment: "Fixed my laptop", date: "2024-03-11" }
+            { user: "Alex", rating: 5, comment: "Fixed my laptop in an hour", date: "2024-03-11" },
+            { user: "Nina", rating: 4, comment: "Good selection of products", date: "2024-03-07" }
         ]
     },
     {
@@ -146,12 +154,13 @@ let businesses = [
         address: "33 Peaceful Lane",
         phone: "(555) 234-8901",
         hours: "7AM - 8PM",
-        description: "Yoga and meditation classes.",
+        description: "Yoga, meditation, and wellness classes for all levels. First class free!",
         lat: 40.7300,
         lng: -74.0240,
         rating: 4.8,
         reviews: [
-            { user: "Rachel", rating: 5, comment: "Life-changing", date: "2024-03-14" }
+            { user: "Rachel", rating: 5, comment: "Life-changing classes", date: "2024-03-14" },
+            { user: "Chris", rating: 4.5, comment: "Very peaceful atmosphere", date: "2024-03-10" }
         ]
     },
     {
@@ -161,12 +170,13 @@ let businesses = [
         address: "888 Spice Street",
         phone: "(555) 345-9012",
         hours: "11AM - 10PM",
-        description: "Authentic Chinese cuisine.",
+        description: "Authentic Chinese cuisine. Dumplings, noodles, and family-style meals.",
         lat: 40.7320,
         lng: -74.0260,
         rating: 4.5,
         reviews: [
-            { user: "Wei", rating: 5, comment: "Best dumplings", date: "2024-03-12" }
+            { user: "Wei", rating: 5, comment: "Best dumplings in the city", date: "2024-03-12" },
+            { user: "Linda", rating: 4, comment: "Generous portions", date: "2024-03-08" }
         ]
     },
     {
@@ -176,12 +186,13 @@ let businesses = [
         address: "444 Care Avenue",
         phone: "(555) 456-0123",
         hours: "24/7",
-        description: "Multi-specialty hospital.",
+        description: "Multi-specialty hospital with advanced diagnostic services. Emergency care always open.",
         lat: 40.7340,
         lng: -74.0280,
         rating: 4.6,
         reviews: [
-            { user: "Patricia", rating: 5, comment: "Compassionate staff", date: "2024-03-13" }
+            { user: "Patricia", rating: 5, comment: "Compassionate staff", date: "2024-03-13" },
+            { user: "Michael", rating: 4, comment: "Modern facilities", date: "2024-03-09" }
         ]
     },
     {
@@ -191,12 +202,13 @@ let businesses = [
         address: "777 Future Way",
         phone: "(555) 567-1234",
         hours: "8AM - 4PM",
-        description: "Early childhood education.",
+        description: "Early childhood education. Play-based learning for ages 2-5.",
         lat: 40.7360,
         lng: -74.0300,
         rating: 4.9,
         reviews: [
-            { user: "Jessica", rating: 5, comment: "My daughter loves it", date: "2024-03-14" }
+            { user: "Jessica", rating: 5, comment: "My daughter loves this place", date: "2024-03-14" },
+            { user: "Brian", rating: 5, comment: "Excellent teachers", date: "2024-03-10" }
         ]
     }
 ];
@@ -207,7 +219,7 @@ let searchTerm = "";
 
 function loadData() {
     const saved = localStorage.getItem("localhub_businesses");
-    if (saved) {
+    if (saved && JSON.parse(saved).length > 0) {
         businesses = JSON.parse(saved);
         const savedId = localStorage.getItem("localhub_nextId");
         if (savedId) nextId = parseInt(savedId);
@@ -314,7 +326,7 @@ function renderBusinessGrid() {
                 saveData();
                 renderBusinessGrid();
                 renderAdminList();
-                showToast(`🗑️ "${biz?.name}" removed`, "remove");
+                showToast(`🗑️ "${biz?.name}" removed`);
             }
         });
     });
@@ -575,6 +587,10 @@ function setupEventListeners() {
         }
     });
 }
+
+// Clear old localStorage to force fresh data
+localStorage.removeItem("localhub_businesses");
+localStorage.removeItem("localhub_nextId");
 
 loadData();
 setupEventListeners();
