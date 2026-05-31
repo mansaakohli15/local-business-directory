@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #F0F7F4;
-    color: #2D3E40;
+    background: #FEF9F0;
+    color: #2C3E3F;
     line-height: 1.5;
 }
 
@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid #DDE8E2;
+    border-bottom: 2px solid #F0E5D6;
     margin-bottom: 2rem;
 }
 
@@ -40,27 +40,27 @@ header {
 }
 
 .logo-text {
-    color: #2D3E40;
+    color: #2C3E3F;
 }
 
 .logo-text span {
-    color: #FFB5A7;
+    color: #F4A261;
 }
 
 .admin-toggle {
-    background: #FFB5A7;
-    color: #2D3E40;
+    background: #6B9080;
+    color: white;
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 40px;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .admin-toggle:hover {
-    background: #FCD5CE;
+    background: #5a7e6e;
     transform: scale(1.02);
 }
 
@@ -74,15 +74,15 @@ header {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
-    color: #2D3E40;
+    color: #2C3E3F;
 }
 
 .hero h1 span {
-    color: #FFB5A7;
+    color: #F4A261;
 }
 
 .hero p {
-    color: #7A9B8A;
+    color: #6B7A6F;
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
@@ -98,7 +98,7 @@ header {
 .search-box input {
     flex: 1;
     padding: 1rem 1.2rem;
-    border: 2px solid #DDE8E2;
+    border: 2px solid #F0E5D6;
     border-radius: 60px;
     font-size: 1rem;
     background: white;
@@ -107,23 +107,23 @@ header {
 
 .search-box input:focus {
     outline: none;
-    border-color: #FFB5A7;
+    border-color: #F4A261;
 }
 
 .search-box button {
-    background: #FFB5A7;
+    background: #F4A261;
     border: none;
     padding: 0 1.8rem;
     border-radius: 60px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    color: #2D3E40;
+    color: white;
     transition: all 0.2s;
 }
 
 .search-box button:hover {
-    background: #FCD5CE;
+    background: #e8924a;
 }
 
 /* Categories */
@@ -137,25 +137,25 @@ header {
 
 .category-btn {
     background: white;
-    border: 2px solid #DDE8E2;
+    border: 2px solid #F0E5D6;
     padding: 0.6rem 1.4rem;
     border-radius: 40px;
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
-    color: #2D3E40;
+    color: #2C3E3F;
     font-family: 'Inter', sans-serif;
 }
 
 .category-btn:hover {
-    border-color: #A5C9B7;
-    background: #F9FCFB;
+    border-color: #F4A261;
+    background: #FFF5EA;
 }
 
 .category-btn.active {
-    background: #A5C9B7;
-    border-color: #A5C9B7;
+    background: #F4A261;
+    border-color: #F4A261;
     color: white;
 }
 
@@ -179,21 +179,21 @@ header {
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     transition: all 0.25s ease;
-    border: 1px solid #DDE8E2;
+    border: 1px solid #F0E5D6;
     cursor: pointer;
 }
 
 .business-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-    border-color: #FFB5A7;
+    border-color: #F4A261;
 }
 
 .business-category {
     display: inline-block;
     padding: 0.2rem 0.8rem;
-    background: #F9FCFB;
-    color: #A5C9B7;
+    background: #FFF5EA;
+    color: #F4A261;
     border-radius: 20px;
     font-size: 0.7rem;
     font-weight: 600;
@@ -204,11 +204,11 @@ header {
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.4rem;
-    color: #2D3E40;
+    color: #2C3E3F;
 }
 
 .business-address {
-    color: #9BB2A6;
+    color: #8B9A8F;
     font-size: 0.85rem;
     margin-bottom: 0.8rem;
     display: flex;
@@ -218,7 +218,7 @@ header {
 
 .business-hours {
     font-size: 0.8rem;
-    color: #FFB5A7;
+    color: #6B9080;
     font-weight: 500;
     margin-bottom: 0.8rem;
 }
@@ -239,13 +239,13 @@ header {
 }
 
 .contact-btn {
-    background: #A5C9B7;
+    background: #6B9080;
     color: white;
 }
 
 .delete-business {
-    background: #F0F7F4;
-    color: #FFB5A7;
+    background: #f0e5d6;
+    color: #c97e5a;
 }
 
 /* Admin Panel */
@@ -253,39 +253,39 @@ header {
     background: white;
     border-radius: 28px;
     padding: 1.8rem;
-    border: 1px solid #DDE8E2;
+    border: 1px solid #F0E5D6;
     margin-top: 1rem;
 }
 
 .admin-panel h2 {
-    color: #2D3E40;
+    color: #2C3E3F;
     margin-bottom: 0.3rem;
 }
 
 .admin-sub {
-    color: #9BB2A6;
+    color: #8B9A8F;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
 }
 
 .admin-form {
-    background: #F0F7F4;
+    background: #FEF9F0;
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 2rem;
-    border: 1px solid #DDE8E2;
+    border: 1px solid #F0E5D6;
 }
 
 .admin-form h3 {
     margin-bottom: 1rem;
-    color: #2D3E40;
+    color: #2C3E3F;
 }
 
 .admin-form input, .admin-form textarea {
     width: 100%;
     margin-bottom: 0.8rem;
     padding: 0.8rem 1rem;
-    border: 1.5px solid #DDE8E2;
+    border: 1.5px solid #F0E5D6;
     border-radius: 16px;
     font-family: 'Inter', sans-serif;
     background: white;
@@ -293,12 +293,12 @@ header {
 
 .admin-form input:focus, .admin-form textarea:focus {
     outline: none;
-    border-color: #FFB5A7;
+    border-color: #F4A261;
 }
 
 .add-btn {
-    background: #FFB5A7;
-    color: #2D3E40;
+    background: #6B9080;
+    color: white;
     border: none;
     padding: 0.8rem;
     width: 100%;
@@ -306,11 +306,10 @@ header {
     font-weight: 600;
     cursor: pointer;
     font-size: 1rem;
-    transition: background 0.2s;
 }
 
 .add-btn:hover {
-    background: #FCD5CE;
+    background: #5a7e6e;
 }
 
 /* Admin Business List */
@@ -319,21 +318,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem;
-    border-bottom: 1px solid #DDE8E2;
+    border-bottom: 1px solid #F0E5D6;
 }
 
 .admin-business-name {
     font-weight: 500;
-    color: #2D3E40;
 }
 
 .admin-delete {
-    background: #F0F7F4;
+    background: #f0e5d6;
     border: none;
     padding: 0.3rem 1rem;
     border-radius: 20px;
     cursor: pointer;
-    color: #FFB5A7;
+    color: #c97e5a;
 }
 
 /* Modal */
@@ -343,7 +341,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(45, 62, 64, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,11 +363,7 @@ header {
     right: 1.5rem;
     font-size: 1.8rem;
     cursor: pointer;
-    color: #9BB2A6;
-}
-
-.close:hover {
-    color: #FFB5A7;
+    color: #8B9A8F;
 }
 
 .hidden {
@@ -379,10 +373,10 @@ header {
 .empty-state {
     text-align: center;
     padding: 3rem;
-    color: #9BB2A6;
+    color: #8B9A8F;
     background: white;
     border-radius: 24px;
-    border: 1px solid #DDE8E2;
+    border: 1px solid #F0E5D6;
 }
 
 /* Responsive */
@@ -397,9 +391,5 @@ header {
     
     .business-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .logo-text {
-        font-size: 1.4rem;
     }
 }
