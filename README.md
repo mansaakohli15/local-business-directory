@@ -1,47 +1,48 @@
-# 🌆 LocalHub — Local Business Directory Platform
+# 🏪 LocalHub — Local Business Directory Platform
 
-![Golden Hour Color Palette](https://img.shields.io/badge/Design-Golden%20Hour-E6B17E)
+![Warm Earthy Colors](https://img.shields.io/badge/Design-Warm%20%26%20Earthy-F4A261)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5\&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript\&logoColor=black)
+![Leaflet](https://img.shields.io/badge/Leaflet-199900?logo=leaflet\&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-6B9080)
 
-> **A warm and inviting platform to discover, explore, and manage local businesses — from cozy cafés to trusted healthcare services.**
+> **A modern platform for discovering, exploring, and managing local businesses with interactive maps, reviews, and an intuitive user experience.**
 
-🌐 **Live Demo:** https://mansaakohli15.github.io/local-business-directory/
+🌐 **Live Demo:** https://mansaakohli15.github.io/local-business-directory
 
 ---
 
 ## 📖 About The Project
 
-Many local businesses struggle to build a strong online presence, while customers often find it difficult to discover reliable services nearby. Existing solutions can be fragmented, outdated, or difficult to manage.
+LocalHub is a business directory platform designed to help users discover nearby businesses while providing administrators with a simple way to manage listings.
 
-**LocalHub bridges this gap.**
+The platform combines powerful search, category filtering, interactive maps, and customer reviews into a single responsive application. Whether users are looking for a restaurant, healthcare service, educational institution, or local shop, LocalHub makes discovery fast and convenient.
 
-LocalHub is a centralized business directory platform where users can browse and discover local services while administrators can easily manage business listings through a simple interface.
+### Key Highlights
 
-### Key Benefits
-
-* 🔍 Discover businesses quickly using search and filters
-* 📍 View complete business information in one place
-* 📱 Enjoy a seamless experience across all devices
-* 💾 Automatically save data using browser storage
-* 🛠️ Manage listings without requiring a backend server
+* 🔍 Search businesses instantly
+* 🏷️ Filter by categories
+* 🗺️ View exact business locations on interactive maps
+* ⭐ Read and submit reviews
+* 📱 Fully responsive design
+* 💾 Persistent data storage using LocalStorage
+* 🚀 No backend required
 
 ---
 
-## 🎨 Golden Hour Design Philosophy
+## 🎨 Design Philosophy
 
-Unlike traditional dark or blue-themed web applications, LocalHub embraces a warm and welcoming visual identity inspired by the colors of a sunset.
+LocalHub embraces a warm and welcoming visual identity inspired by local communities, cafés, and neighborhood markets.
 
-| Element          | Color     | Purpose                  |
-| ---------------- | --------- | ------------------------ |
-| Background       | `#FFFDF5` | Soft and calming         |
-| Primary Accent   | `#E6B17E` | Friendly and energetic   |
-| Secondary Accent | `#C77A6F` | Unique and memorable     |
-| Text Color       | `#4A3B32` | Warm and highly readable |
+| Element          | Color     |
+| ---------------- | --------- |
+| Background       | `#FEF9F0` |
+| Primary Accent   | `#F4A261` |
+| Secondary Accent | `#6B9080` |
+| Text Color       | `#2C3E3F` |
 
-The result is a clean, premium interface that feels approachable and modern.
+The result is a clean, approachable interface that feels professional while remaining friendly and accessible.
 
 ---
 
@@ -49,44 +50,50 @@ The result is a clean, premium interface that feels approachable and modern.
 
 ### 👥 User Features
 
-| Feature                       | Description                                                |
-| ----------------------------- | ---------------------------------------------------------- |
-| 🔍 Smart Search               | Search businesses by name, address, or category            |
-| 🏷️ Category Filters          | Browse Restaurants, Shops, Healthcare, Education, and more |
-| 📇 Detailed Business Profiles | View business hours, contact information, and descriptions |
-| 📞 Quick Contact Access       | Instantly access business contact details                  |
-| 📱 Responsive Design          | Optimized for desktop, tablet, and mobile devices          |
+| Feature              | Description                                                             |
+| -------------------- | ----------------------------------------------------------------------- |
+| 🔍 Smart Search      | Search businesses by name or address                                    |
+| 🏷️ Category Filters | Restaurants, Shops, Healthcare, Education, and more                     |
+| 📍 Business Details  | View complete information including contact details and operating hours |
+| 🗺️ Interactive Maps | Explore business locations using Leaflet and OpenStreetMap              |
+| ⭐ Ratings & Reviews  | View customer feedback and ratings                                      |
+| ✍️ Review Submission | Submit reviews and ratings directly from the platform                   |
+| 📞 Contact Access    | Quickly access business contact information                             |
+| 📱 Responsive Design | Optimized for desktop, tablet, and mobile devices                       |
 
 ### 🛠️ Admin Features
 
-| Feature                      | Description                                            |
-| ---------------------------- | ------------------------------------------------------ |
-| ➕ Add Businesses             | Create new business listings through an intuitive form |
-| 🗑️ Delete Businesses        | Remove listings instantly                              |
-| 📋 Business Management Panel | View and manage all listings in one place              |
-| 🔔 Toast Notifications       | Real-time feedback for user actions                    |
+| Feature                 | Description                             |
+| ----------------------- | --------------------------------------- |
+| ➕ Add Businesses        | Create new business listings            |
+| 🗑️ Delete Businesses   | Remove existing listings                |
+| 📋 Management Dashboard | Organized business management interface |
+| 🔔 Toast Notifications  | Instant feedback for user actions       |
 
 ### ⚙️ Technical Features
 
-| Feature                     | Description                               |
-| --------------------------- | ----------------------------------------- |
-| 💾 LocalStorage Integration | Data persists even after refreshing       |
-| 🚀 Lightweight Performance  | Fast loading with zero dependencies       |
-| 🎯 No Backend Required      | Built entirely with frontend technologies |
-| 📦 Sample Dataset Included  | Preloaded business listings for testing   |
+| Feature                       | Description                            |
+| ----------------------------- | -------------------------------------- |
+| 💾 LocalStorage Support       | Automatic client-side data persistence |
+| 🗺️ OpenStreetMap Integration | Interactive maps without API costs     |
+| 🚀 Lightweight Architecture   | Fast and efficient performance         |
+| 🎯 Pure Frontend Application  | No backend or database required        |
+| 📦 Sample Dataset             | Includes preloaded business listings   |
 
 ---
 
 ## 🧰 Tech Stack
 
-| Technology           | Purpose                             |
-| -------------------- | ----------------------------------- |
-| HTML5                | Structure and layout                |
-| CSS3                 | Styling and animations              |
-| JavaScript (Vanilla) | Application logic and interactivity |
-| LocalStorage         | Client-side data persistence        |
-| Google Fonts (Inter) | Typography                          |
-| GitHub Pages         | Deployment and hosting              |
+| Technology           | Purpose                       |
+| -------------------- | ----------------------------- |
+| HTML5                | Structure and Layout          |
+| CSS3                 | Styling and Responsive Design |
+| JavaScript (Vanilla) | Application Logic             |
+| Leaflet.js           | Interactive Maps              |
+| OpenStreetMap        | Map Data                      |
+| LocalStorage         | Data Persistence              |
+| Google Fonts (Inter) | Typography                    |
+| GitHub Pages         | Hosting and Deployment        |
 
 ---
 
@@ -95,10 +102,10 @@ The result is a clean, premium interface that feels approachable and modern.
 ```text
 local-business-directory/
 │
-├── index.html          # Main application structure
-├── style.css           # Golden Hour styling
-├── script.js           # Search, filtering, admin logic
-└── README.md           # Project documentation
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 ```
 
 ---
@@ -117,7 +124,7 @@ git clone https://github.com/mansaakohli15/local-business-directory.git
 cd local-business-directory
 ```
 
-### Run the Application
+### Run the Project
 
 #### Option 1: Live Server (Recommended)
 
@@ -128,44 +135,60 @@ cd local-business-directory
 
 #### Option 2: Direct Launch
 
-Simply open `index.html` in your preferred browser.
+Open `index.html` in your preferred browser.
 
 ---
 
-## 🛠️ How To Use
+## 🛠️ Usage
 
 ### Browsing Businesses
 
-1. Explore the business directory grid
-2. Use category filters to narrow results
-3. Search by business name, category, or address
-4. Click a business card to view detailed information
-5. Access contact information instantly
+* Browse the business directory
+* Search by name or address
+* Filter businesses by category
+* Open business details for additional information
+* View location on the interactive map
+* Read or submit reviews
 
-### Admin Functions
+### Managing Businesses
 
-1. Open the Admin Panel
-2. Add new businesses using the provided form
-3. Remove outdated listings
-4. Changes are automatically saved using LocalStorage
+* Open the Admin Panel
+* Add new business listings
+* Remove existing businesses
+* Changes are automatically saved using LocalStorage
 
 ---
 
 ## 📸 Screenshots
 
-<img width="1919" height="1088" alt="image" src="https://github.com/user-attachments/assets/115743bd-0bf5-493e-a6fb-36f790f1ddcb" />
+| Page                 | Description                                |
+| -------------------- | ------------------------------------------ |
+| 🏠 Home              | Business directory with search and filters |
+| 📇 Business Listings | Responsive business cards                  |
+| 📍 Business Details  | Information modal with map integration     |
+| ⭐ Reviews            | Customer feedback section                  |
+| 🛠️ Admin Panel      | Business management interface              |
 
 ---
 
 ## 📈 Future Enhancements
 
-* 🗺️ Google Maps integration
-* ⭐ Customer ratings and reviews
 * 👤 Business owner authentication
 * 🖼️ Business image uploads
-* 📊 Export listings to CSV/PDF
+* 📊 CSV and PDF export functionality
 * 📧 Email contact forms
+* 📍 Distance-based search
+* 🕒 Business availability tracking
 * 🔔 Business verification system
+
+---
+
+## 🙏 Acknowledgments
+
+* OpenStreetMap for map data
+* Leaflet.js for interactive maps
+* Google Fonts for typography
+* GitHub Pages for free hosting
 
 ---
 
@@ -173,7 +196,7 @@ Simply open `index.html` in your preferred browser.
 
 **Mansaa Kohli**
 
-Created as part of a web development project focused on responsive design, usability, and local business discovery.
+Developed as a responsive web application focused on local business discovery, user experience, and frontend development.
 
 ---
 
@@ -181,4 +204,4 @@ Created as part of a web development project focused on responsive design, usabi
 
 This project is licensed under the **MIT License**.
 
-Feel free to use, modify, and distribute it for educational and personal projects.
+Feel free to use, modify, and distribute it for educational and personal purposes.
